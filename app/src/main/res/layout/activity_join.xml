@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:layout_marginRight="15dp"
+       android:layout_marginLeft="15dp"
+       android:layout_marginTop="15dp">
+
+       <!--상단-->
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="18">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="@string/sign_up"
+               android:textSize="30sp"
+               android:textColor="@color/black"
+               android:gravity="center|left"/>
+       </LinearLayout>
+
+       <!--하단-->
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="8"
+           android:orientation="horizontal">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="horizontal"
+               android:layout_marginTop="15sp"
+               android:layout_marginLeft="10dp">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:orientation="vertical"
+                   android:layout_weight="1">
+
+                   <EditText
+                       android:id="@+id/t_email"
+                       android:layout_width="match_parent"
+                       android:layout_height="45dp"
+                       android:ems="10"
+                       android:hint="@string/email"
+                       android:inputType="textPersonName"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toTopOf="parent"
+                       android:autofillHints="no" />
+
+
+                   <EditText
+                       android:id="@+id/t_pass"
+                       android:layout_width="200dp"
+                       android:layout_height="45dp"
+                       android:layout_marginTop="20dp"
+                       android:ems="10"
+                       android:hint="@string/pw"
+                       android:inputType="textPassword"
+                       app:layout_constraintEnd_toEndOf="@+id/t_login_id"
+                       app:layout_constraintStart_toStartOf="@+id/t_login_id"
+                       app:layout_constraintTop_toBottomOf="@+id/t_login_id"
+                       android:autofillHints="no"
+                       />
+
+                   <EditText
+                       android:id="@+id/t_pw_pass"
+                       android:layout_width="200dp"
+                       android:layout_height="45dp"
+                       android:layout_marginTop="20dp"
+                       android:ems="10"
+                       android:hint="@string/pw_pass"
+                       android:inputType="textPassword"
+                       app:layout_constraintEnd_toEndOf="@+id/t_pass"
+                       app:layout_constraintStart_toStartOf="@+id/t_pass"
+                       app:layout_constraintTop_toBottomOf="@+id/t_pass"
+                       android:autofillHints="no" />
+
+                   <EditText
+                       android:id="@+id/t_name"
+                       android:layout_width="200dp"
+                       android:layout_height="45dp"
+                       android:layout_marginTop="20dp"
+                       android:ems="10"
+                       android:hint="@string/name"
+                       android:inputType="textPersonName"
+                       app:layout_constraintEnd_toEndOf="@+id/t_pw_pass"
+                       app:layout_constraintStart_toStartOf="@+id/t_pw_pass"
+                       app:layout_constraintTop_toBottomOf="@+id/t_pw_pass"
+                       android:autofillHints="no" />
+
+                   <EditText
+                       android:id="@+id/t_pro"
+                       android:layout_width="200dp"
+                       android:layout_height="45dp"
+                       android:layout_marginTop="20dp"
+                       android:ems="10"
+                       android:hint="@string/protector"
+                       android:inputType="textPersonName"
+                       app:layout_constraintEnd_toEndOf="@+id/t_name"
+                       app:layout_constraintStart_toStartOf="@+id/t_name"
+                       app:layout_constraintTop_toBottomOf="@+id/t_name"
+                       android:autofillHints="no" />
+
+                   <EditText
+                       android:id="@+id/t_ward"
+                       android:layout_width="200dp"
+                       android:layout_height="45dp"
+                       android:layout_marginTop="20dp"
+                       android:ems="10"
+                       android:hint="@string/ward"
+                       android:inputType="textPersonName"
+                       app:layout_constraintEnd_toEndOf="@+id/t_pro"
+                       app:layout_constraintStart_toStartOf="@+id/t_pro"
+                       app:layout_constraintTop_toBottomOf="@+id/t_pro"
+                       android:autofillHints="no" />
+
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1.5">
+
+                   <Button
+                       android:id="@+id/duplicate"
+                       android:layout_width="wrap_content"
+                       android:layout_height="45dp"
+                       android:text="@string/duplicate"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintHorizontal_bias="0.07"
+                       app:layout_constraintStart_toEndOf="@+id/t_login_id"
+                       app:layout_constraintTop_toTopOf="parent" />
+
+               </LinearLayout>
+           </LinearLayout>
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="13"
+           android:orientation="vertical">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <Button
+                   android:id="@+id/btn_register"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/sign_up"
+                   app:layout_constraintEnd_toEndOf="@+id/t_ward"
+                   app:layout_constraintStart_toStartOf="@+id/t_ward"
+                   app:layout_constraintTop_toBottomOf="@+id/t_ward" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+           </LinearLayout>
+
+       </LinearLayout>
+   </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
