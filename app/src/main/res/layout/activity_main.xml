@@ -52,12 +52,12 @@
                     android:clickable="true">
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="15sp"
-                        android:textColor="@color/black"
                         android:id="@+id/date_time"
-                        android:gravity="center|left"/>
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center|left"
+                        android:textColor="@color/black"/>
                 </LinearLayout>
             </LinearLayout>
             <!--옵션, 메뉴설정-->
@@ -101,7 +101,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="3.5"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:id="@+id/board">
 
                 <TextView
                     android:layout_width="match_parent"

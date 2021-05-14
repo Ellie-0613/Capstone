@@ -44,7 +44,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginBottom="10dp">
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/info">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -66,7 +67,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp">
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/change">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -87,16 +89,63 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="10dp">
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/notice">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="공지사항"
+                            android:gravity="center|left"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/using">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="앱 사용방법"
+                            android:gravity="center|left"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:background="#673AB7"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"/>
+
+                <!--로그아웃-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="공지사항\n앱 사용방법"
+                        android:text="로그아웃"
                         android:gravity="center|left"
                         android:textSize="20sp"
                         android:textColor="@color/black" />
-
 
                 </LinearLayout>
 

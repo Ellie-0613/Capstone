@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".ContentActivity">
 
 
     <ImageView
@@ -19,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent"/>
 
     <Button
-        android:id="@+id/reg_met"
+        android:id="@+id/registration"
         android:layout_width="350dp"
         android:layout_height="70dp"
         android:layout_marginTop="150dp"
@@ -34,7 +35,7 @@
         app:layout_constraintTop_toTopOf="@+id/sonaji" />
 
     <Button
-        android:id="@+id/met"
+        android:id="@+id/methed"
         android:layout_width="350dp"
         android:layout_height="70dp"
         android:layout_marginTop="80dp"
@@ -44,20 +45,19 @@
         android:textColor="@color/black"
         android:textSize="35sp"
         app:backgroundTint="#FFCECE"
-        app:layout_constraintEnd_toEndOf="@+id/reg_met"
-        app:layout_constraintStart_toStartOf="@+id/reg_met"
-        app:layout_constraintTop_toTopOf="@+id/reg_met"
+        app:layout_constraintEnd_toEndOf="@+id/registration"
+        app:layout_constraintStart_toStartOf="@+id/registration"
+        app:layout_constraintTop_toTopOf="@+id/registration"
         />
 
     <TextView
+        android:id="@+id/using"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="end|bottom"
         android:text="@string/using"
         android:textColor="@color/black"
-        android:textSize="40sp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        android:textSize="40sp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

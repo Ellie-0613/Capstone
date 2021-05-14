@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LoginActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -73,12 +75,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="7">
+                    android:layout_weight="5">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -93,7 +96,7 @@
                             android:id="@+id/LinearLayoutLogin"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_weight="1.1"
+                            android:layout_weight="1.3"
                             android:orientation="horizontal">
 
                             <!--로그인-->
@@ -128,13 +131,13 @@
                             android:background="#673AB7" />
                         <!--회원가입-->
                         <LinearLayout
+                            android:id="@+id/LinearLayoutJoin"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_weight="1.1"
+                            android:layout_weight="1.3"
                             android:orientation="horizontal">
 
                             <TextView
-                                android:id="@+id/LinearLayoutJoin"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:gravity="center"
