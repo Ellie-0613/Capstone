@@ -5,6 +5,7 @@ import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.Context;
 import android.os.Build;
+import android.util.Log;
 
 import androidx.core.app.NotificationCompat;
 
@@ -28,11 +29,13 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         sendRegistrationToServer(token);
     }
     private void sendRegistrationToServer(String token) {
-        //node서버로 보내기 (안해도 될듯?)
+        Log.d("test", token);
     }
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {
+        Log.d("test", "1");
         if (remoteMessage.getData().size() > 0) {
+            Log.d("test", "2");
             sendNotification(remoteMessage.getData());
         }
     }
@@ -40,7 +43,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         NotificationManager notificationManager = (NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);
         NotificationCompat.Builder builder = null;
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
-
+            Log.d("test", "3");
             String channelID="channel_01"; //알림채널 식별자
             String channelName="MyChannel01"; //알림채널의 이름(별명)
 
@@ -54,10 +57,11 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
             builder=new NotificationCompat.Builder(this, channelID);
 
         }else{
+            Log.d("test", "4");
             //알림 건축가 객체 생성
             builder= new NotificationCompat.Builder(this, null);
         }
-
+        Log.d("test", "5");
         //건축가에게 원하는 알림의 설정작업
         builder.setSmallIcon(android.R.drawable.ic_menu_view);
 
@@ -71,5 +75,6 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
         //알림매니저에게 알림(Notify) 요청
         notificationManager.notify(1, notification);
+        Log.d("test", "6");
     }
 }

@@ -74,7 +74,8 @@ public class LoginActivity extends AppCompatActivity{
                                 String UserEmail = login_email.getText().toString();
                                 String UserPwd = login_password.getText().toString();
 
-                                String url = "http://192.168.10.55:3000/user/login";
+                                String url = "http://172.30.1.38:3000/user/login";
+                                Log.d("test", FcmToken);
                                 JSONObject jsonBody = new JSONObject();
                                 try {
                                     jsonBody.put("email", UserEmail);
@@ -146,7 +147,7 @@ public class LoginActivity extends AppCompatActivity{
                 String UserEmail = login_email.getText().toString();
                 String UserPwd = login_password.getText().toString();
 
-                String url = "http://192.168.10.55:3000/usercli/login";
+                String url = "http://172.30.1.38:3000/usercli/login";
                 JSONObject jsonBody = new JSONObject();
                 try {
                     jsonBody.put("email", UserEmail);
