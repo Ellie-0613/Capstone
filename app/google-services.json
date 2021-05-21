@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "645788023421",
+    "project_id": "sonagi-13279",
+    "storage_bucket": "sonagi-13279.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:645788023421:android:e1cd33ffbe9380674a0f14",
+        "android_client_info": {
+          "package_name": "com.example.capstone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "645788023421-85prcvg1923p702139ss7bjv6dvg4hva.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.capstone",
+            "certificate_hash": "627828eaebc9590299d7885f230c44dfad7314f8"
+          }
+        },
+        {
+          "client_id": "645788023421-pgqhbj0ann54oa75rte47o8ukjn0o1j0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8CUHW7PBJibeuwLdsW_nG0vZs6pVn4Rw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "645788023421-pgqhbj0ann54oa75rte47o8ukjn0o1j0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
