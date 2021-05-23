@@ -53,11 +53,11 @@
 
                     <TextView
                         android:id="@+id/date_time"
-                        android:layout_width="match_parent"
+                        android:layout_width="268dp"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="10dp"
                         android:gravity="center|left"
-                        android:textColor="@color/black"/>
+                        android:textColor="@color/black" />
                 </LinearLayout>
             </LinearLayout>
             <!--옵션, 메뉴설정-->
