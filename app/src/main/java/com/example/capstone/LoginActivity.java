@@ -74,7 +74,7 @@ public class LoginActivity extends AppCompatActivity{
                                 String UserEmail = login_email.getText().toString();
                                 String UserPwd = login_password.getText().toString();
 
-                                String url = "http://172.30.1.38:3000/user/login";
+                                String url = "http://192.168.0.14:3000/user/login";
                                 Log.d("test", FcmToken);
                                 JSONObject jsonBody = new JSONObject();
                                 try {
@@ -133,8 +133,6 @@ public class LoginActivity extends AppCompatActivity{
                                         }
                                     }
                                 };
-                                //LoginRequest loginRequest = new LoginRequest( UserEmail, UserPwd, responseListener );
-                                //RequestQueue queue = Volley.newRequestQueue( LoginActivity.this );
                                 queue.add( stringRequest );
                             }
                         });
@@ -147,7 +145,7 @@ public class LoginActivity extends AppCompatActivity{
                 String UserEmail = login_email.getText().toString();
                 String UserPwd = login_password.getText().toString();
 
-                String url = "http://172.30.1.38:3000/usercli/login";
+                String url = "http://192.168.0.14:3000/usercli/login";
                 JSONObject jsonBody = new JSONObject();
                 try {
                     jsonBody.put("email", UserEmail);

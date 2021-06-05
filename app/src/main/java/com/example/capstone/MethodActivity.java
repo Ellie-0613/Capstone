@@ -7,8 +7,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MethodActivity extends AppCompatActivity {
     @Override
-    protected void onCreate(Bundle savedlnstanceState) {
-        super.onCreate(savedlnstanceState);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_method_of_use);
 
         ActionBar actionBar = getSupportActionBar();

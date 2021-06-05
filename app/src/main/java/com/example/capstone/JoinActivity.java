@@ -71,7 +71,7 @@ public class JoinActivity extends AppCompatActivity {
                     dialog.show();
                     return;
                 }
-                String url = "http://172.30.1.38:3000/email";
+                String url = "http://192.168.0.14:3000/email";
                 JSONObject jsonBody = new JSONObject();
                 try {
                     jsonBody.put("email", UserEmail);
@@ -155,9 +155,9 @@ public class JoinActivity extends AppCompatActivity {
                                 }
                                 // Get new FCM registration token
                                 String FcmToken = task.getResult();
-                                String url = "http://172.30.1.38:3000/user";
+                                String url = "http://192.168.0.14:3000/user";
                                 //보호자 이메일 란이 빈칸이 아니면 피보호자로 회원가입 되게
-                                if (!Pro.equals("")) url = "http://172.30.1.38:3000/usercli";
+                                if (!Pro.equals("")) url = "http://192.168.0.14:3000/usercli";
                                 JSONObject jsonBody = new JSONObject();
                                 try {
                                     jsonBody.put("email", UserEmail);

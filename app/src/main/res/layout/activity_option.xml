@@ -39,52 +39,6 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp">
-
-<!--회원정보 관리-->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="10dp"
-                    android:id="@+id/info">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="회원정보 관리"
-                        android:gravity="center|left"
-                        android:textSize="20sp"
-                        android:textColor="@color/black"/>
-
-                </LinearLayout>
-
-                <View
-                android:background="#673AB7"
-                android:layout_width="match_parent"
-                android:layout_height="3dp"/>
-
- <!--변경사항-->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:id="@+id/change">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="보호자 / 피보호자 변경"
-                        android:gravity="center|left"
-                        android:textSize="20sp"
-                        android:textColor="@color/black" />
-
-                </LinearLayout>
-
-                <View
-                    android:background="#673AB7"
-                    android:layout_width="match_parent"
-                    android:layout_height="3dp"/>
-
 <!--기타 추가사항-->
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -117,7 +71,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:text="앱 사용방법"
+                            android:text="@string/method"
                             android:gravity="center|left"
                             android:textSize="20sp"
                             android:textColor="@color/black"

@@ -53,7 +53,7 @@ public class AlarmActivity extends AppCompatActivity {
             public void onClick(View view) {
                 SharedPreferences sf = getSharedPreferences("sFile", MODE_PRIVATE);
                 String token = sf.getString("accessToken", "");
-                String url = "http://172.30.1.38:3000/log/alarm";
+                String url = "http://192.168.0.14:3000/log/alarm";
                 RequestQueue queue = Volley.newRequestQueue(AlarmActivity.this);
                 StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
                     @Override

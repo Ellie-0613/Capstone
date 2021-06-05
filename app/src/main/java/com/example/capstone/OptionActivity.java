@@ -12,38 +12,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class OptionActivity extends AppCompatActivity {
 
-    private LinearLayout info, change, notice, using, logout;
+    private LinearLayout notice, using, logout;
 
     @Override
-    protected void onCreate(Bundle savedlnstanceState){
-        super.onCreate(savedlnstanceState);
+    protected void onCreate(Bundle savedInstanceState){
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_option);
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
-
-        info = findViewById(R.id.info) ;
-        change = findViewById(R.id.change);
         notice = findViewById(R.id.notice);
         using = findViewById(R.id.using);
         logout = findViewById(R.id.logout);
-
-
-        info.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), InforActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        change.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), GuardianActivity.class);
-                startActivity(intent);
-            }
-        });
 
         notice.setOnClickListener(new View.OnClickListener() {
             @Override

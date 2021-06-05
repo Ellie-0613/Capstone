@@ -22,8 +22,8 @@ public class ContentActivity extends AppCompatActivity{
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
-        Button Registration = (Button) findViewById(R.id.registration);
-        Button Method = (Button) findViewById(R.id.methed);
+        Registration = (Button) findViewById(R.id.registration);
+        Method = (Button) findViewById(R.id.methed);
         Using = findViewById(R.id.using) ;
 
         Registration.setOnClickListener(new View.OnClickListener() {

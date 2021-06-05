@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.capstone">
+
+    <uses-permission-sdk-23 android:name="android.permission.UPDATE_DEVICE_STATS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT"/>
@@ -21,8 +26,6 @@
         <activity android:name=".OptionActivity"/>
         <activity android:name=".BoardActivity"/>
         <activity android:name=".NoticeActivity"/>
-        <activity android:name=".GuardianActivity"/>
-        <activity android:name=".InforActivity"/>
         <activity android:name=".AlarmActivity"/>
         <activity android:name=".ContentActivity">
             <intent-filter>

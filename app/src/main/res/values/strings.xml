@@ -11,7 +11,7 @@
     <string name="ward">인증코드</string>
     <string name="duplicate">인증메일 발송</string>
     <string name="registration_method">사용자 등록 방법</string>
-    <string name="method">앱 이용 방법</string>
+    <string name="method">앱 사용방법</string>
     <string name="using">앱 사용하기➔</string>
     <string name="bulletin_board">자유게시판</string>
     <string name="now">현재시간:</string>
